@@ -1,0 +1,10 @@
+node_modules
+*-v*.js
+*-v*.html
+*no*commit*
+*No*Commit*
+*NO*COMMIT*
+*.bkp.*
+*.bkp
+*.log
+*.out

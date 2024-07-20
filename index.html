@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Screen Recorder"/>
+    <meta property="og:url" content="https://tiagofranca.com/"/>
+    <meta property="og:type" content="article"/>
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon.ico"/>
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon.ico"/>
+    <link rel="shortcut icon" href="./img/favicon.ico"/>
+    <meta name="apple-mobile-web-app-title" content="Screen Recorder"/>
+    <meta name="application-name" content="Screen Recorder"/>
+    <meta name="theme-color" content="#f8fafc"/>
+  <title>Screen Recorder</title>
+</head>
+<body>
+    <div>
+        <img src="./img/logo.png" style="width: 3rem;" alt="">
+    </div>
+    <h1>Screen Recorder</h1>
+    <label>
+        <input type="checkbox" data-record-element-id="includeAudio">
+        Include Microphone Audio
+      </label>
+      <br>
+      <label>
+        File Name:
+        <input type="text" data-record-element-id="fileName" placeholder="Enter file name">
+      </label>
+      <br>
+      <label>
+        <input type="checkbox" data-record-element-id="addDate">
+        Add date to file name
+      </label>
+      <br>
+      <label>
+        <input type="radio" name="datePosition" value="prefix" checked> Prefix
+      </label>
+      <label>
+        <input type="radio" name="datePosition" value="suffix"> Suffix
+      </label>
+      <br>
+      <button data-record-element-id="saveSettings">Save Settings</button>
+      <br><br>
+      <button data-record-element-id="startRecording">Start Recording</button>
+      <button data-record-element-id="pauseRecording" disabled>Pause Recording</button>
+      <button data-record-element-id="resumeRecording" disabled>Resume Recording</button>
+      <button data-record-element-id="stopRecording" disabled>Stop Recording</button>
+      <p data-record-element-id="recordingTime">Recording time: 0s</p>
+    <script type="module" src="./script.js"></script>
+  <script type="module" src="./main.js" defer></script>
+</body>
+</html>
