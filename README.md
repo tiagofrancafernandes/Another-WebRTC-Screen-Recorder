@@ -2,6 +2,10 @@
 
 ### [Try online](https://tiagofrancafernandes.github.io/Another-WebRTC-Screen-Recorder)
 
+### Why?
+
+> I created this project to record the videos for my course [Do Zero ao Deploy](https://dozeroaodeploy.com.br/).
+
 ## Install and run
 
 * Step 1
