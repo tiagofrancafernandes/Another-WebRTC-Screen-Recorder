@@ -6,7 +6,8 @@
         "start": "vite",
         "dev": "vite",
         "build": "vite build",
-        "preview": "vite preview"
+        "preview": "vite preview",
+        "build-and-preview": "vite build && vite preview"
     },
     "dependencies": {
         "alpinejs": "^3.14.1",
