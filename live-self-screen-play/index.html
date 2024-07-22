@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Live Self Screen Player"/>
+    <meta property="og:url" content="https://tiagofranca.com/"/>
+    <meta property="og:type" content="article"/>
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon.ico"/>
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon.ico"/>
+    <link rel="shortcut icon" href="./img/favicon.ico"/>
+    <meta name="apple-mobile-web-app-title" content="Live Self Screen Player"/>
+    <meta name="application-name" content="Live Self Screen Player"/>
+    <meta name="theme-color" content="#f8fafc"/>
+    <style>
+        #video {
+            border: 1px solid #999;
+            width: 98%;
+            max-width: 860px;
+        }
+
+        #log {
+            width: 25rem;
+            height: 15rem;
+            border: 1px solid black;
+            padding: 0.5rem;
+            overflow: scroll;
+        }
+    </style>
+  <title>Live Self Screen Player</title>
+</head>
+<body>
+    <div>
+        <img src="./img/logo.png" style="width: 3rem;" alt="">
+    </div>
+    <h1>Live Self Screen Player</h1>
+    <h6>Make using tutorial in <a href="https://developer.mozilla.org/en-US/docs/Web/API/Screen_Capture_API/Using_Screen_Capture" target="_blank">MDN</a></h6>
+    <p>
+        This example shows you the contents of the selected part of your display.
+        Click the Start Capture button to begin.
+    </p>
+
+    <p>
+        <button id="start">Start Capture</button>&nbsp;
+        <button id="stop">
+        Stop Capture
+        </button>
+    </p>
+
+    <video id="video" autoplay></video>
+    <br />
+
+    <strong>Log:</strong>
+    <br />
+    <pre id="log"></pre>
+
+    <script type="module" src="./main.js" defer></script>
+</body>
+</html>

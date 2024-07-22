@@ -5,8 +5,15 @@
     "scripts": {
         "start": "vite",
         "dev": "vite",
+        "vite": "vite",
+        "vite:help": "vite --help",
+        "dev:open": "vite --open",
+        "dev:port:8000": "vite --port=8000",
+        "serve:all": "vite --cors --host=0.0.0.0",
+        "serve:all:8001": "vite --cors --host=0.0.0.0 --port=8001",
         "build": "vite build",
-        "preview": "vite preview"
+        "preview": "vite preview",
+        "build-and-preview": "vite build && vite preview"
     },
     "dependencies": {
         "alpinejs": "^3.14.1",
